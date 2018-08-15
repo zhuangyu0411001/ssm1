@@ -1,0 +1,39 @@
+1.创建数据库创建表
+(1)数据库连接
+name:root
+pwd: 123
+
+(2)数据库名: xhdb
+(3)表:   stu: id, name, sex
+
+2.创建maven的web项目
+(1)完善pom.xml的配置
+(2)加上log4j.properties
+(3)web.xml的最简单的配置
+
+3.整合mybatis并测试
+(1)mybatis/mybatis-config.xml配置文件
+(2)com.xxx.po.Stu.java
+(3)com.xxx.dao.StuMapper.java
+(4)mapper/StuMapper.xml
+(5)spring/spring-dao.xml
+(6)使用测试 com.xxx.dao.StuMapperTest.java
+
+4.整合Service层并测试
+(1)com.xxx.service包
+<1>public interface StuService
+<2>public class StuServiceInf implement StuService;
+
+(2)spring/spring-service.xml配置文件
+<1>配置扫描的包
+<2>配置事务管理器 
+<3>配置基于注解的声明式事务
+<4>在StuServiceInf类中使用注解 @Service
+
+(3)使用测试com.xxx.service.StuServiceTest
+
+5.整合Controller层并测试
+(1)创建StuController,并在类上面加上@Controller
+(2)spring/spring-controller.xml配置文件
+ 
+ 
